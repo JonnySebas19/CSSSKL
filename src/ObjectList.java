@@ -1,9 +1,13 @@
 public class ObjectList { //or IntList, caps at 100 elements with no bullet-
     //proofing or bounds checks, etc.
     private int numElements = 0;
-    private Object[] myShapes;
+    private Object[] myShapes = new Object[100];
     public void add(Object shape) {
-        myShapes[numElements++] = shape;
+        if (numElements < 99) {
+            myShapes[numElements++] = shape;
+        } else {
+            System.out.println("Array full... Cannot hold any more shapes");
+        }
     }
     public String toString() {
         String retVal = "";

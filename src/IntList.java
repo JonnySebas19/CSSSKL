@@ -59,7 +59,7 @@ public class IntList { //or IntList, caps at 100 elements with no bullet-
         a.add(95);
         a.add(100);
         a.add(58);
-        System.out.println(a.toString());
+        System.out.println(a);
         System.out.println(a.sum() );
         System.out.println(a.indexOf(100));
         System.out.println(a.indexOf(20));
